@@ -24,7 +24,7 @@ function calcRoute() {
         if(status == google.maps.DirectionsStatus.OK){
             // console.log(results);
             $('#output').html("<div class='alert-info'>From : "+document.getElementById("form").value+".<br>TO: "+document.getElementById("to").value+"<br>Driving Distance: "+results.routes[0].legs[0].distance.text+"<br>Duration:"+results.routes[0].legs[0].duration.text+"</div>");
-            window.alert("The travelling distance is" +results.routes[0].legs[0].distance.text +".<br>The travelling Duration is: " +results.routes[0].legs[0].duration.text+".");
+//             window.alert("The travelling distance is" +results.routes[0].legs[0].distance.text +".<br>The travelling Duration is: " +results.routes[0].legs[0].duration.text+".");
 
             directionsDisplay.setDirections(results);
         }
